@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  justify-content: space-between;
+  background-color: rgb(252, 252, 252);
+  z-index: 99999;
+  width: 80%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(13px);
+}
+header ul {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  text-decoration: none;
+}
+header ul li {
+  font-size: large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.active {
+  color: rgb(216, 166, 166);
+}
+.dropdown button {
+  background-color: rgb(226, 219, 219);
+  color: rgb(70, 35, 70);
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 12px;
+  color: rgb(70, 35, 70);
+  box-shadow: 0px 5px 10px 0px rgb(216, 166, 166);
+  background-color: white;
+}
+.dropdown-content p {
+  padding: 5px 12px;
+}
+.dropdown-content :hover {
+  color: rgb(2, 2, 2);
+  background-color: rgb(189, 162, 189);
+}
+.intro {
+  display: flex;
+  padding: 1%;
+  margin: 5%;
+}
+.intro h2 {
+  color: rgb(66, 61, 121);
+  padding: 10px;
+  margin: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-;
+}
+.intro label {
+  color: rgb(66, 61, 121);
+  padding: 10px;
+  margin: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-;
+}
+.landing {
+  width: 100%;
+  height: 450px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5I4l3HDPFvsfFGQEvXNSqWue-5nMSH5kzbg&usqp=CAU);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.landing h1 {
+  color: rgb(66, 61, 121);
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-;
+}
+.box-container {
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.877);
+  display: flex;
+  padding: 1%;
+  padding-bottom: 6%;
+  margin: 0% 20%;
+  gap: 5%;
+}
+.box h1 {
+  color: rgb(114, 114, 124);
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.box img {
+  width: 30%;
+  height: 70%;
+}
+.paragraph-container {
+  display: flex;
+  margin: 0.5%;
+  padding: 10%;
+  background-color: rgb(195, 195, 230);
+}
+.paragraph-container p {
+  font-size: 150%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(66, 61, 121);
+}
+.date-picker {
+  display: flex;
+  border-radius: 20px;
+  border: 10px;
+  width: 80%;
+  margin: 0 auto;
+  margin-block: 150px;
+  height: 300px;
+  border: 2px solid rgb(66, 61, 121);
+  background-color: rgb(195, 195, 230);
+  gap: 50px;
+  padding: 0px 20px;
+}
+.date-picker .date-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.date-picker .date-left div {
+  margin-top: 20px;
+}
+.date-picker .date-left div input,
+.date-picker .date-left div button {
+  padding: 8px 16px;
+}
+.date-picker .date-left h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(66, 61, 121);
+}
+.date-picker .date-left p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(66, 61, 121);
+}
+
+.date-picker .date-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-picker .date-right h1 {
+  background-color: rgb(195, 195, 230);
+  color: white;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#content {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.testimonial blockquote {
+  margin: 10px 10px 0;
+  background: #efefef;
+  padding: 10px 60px;
+  position: relative;
+  border: none;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after {
+  content: "\201C";
+  position: absolute;
+  font-size: 80px;
+  line-height: 1;
+  color: #757f9a;
+  font-style: normal;
+}
+
+.testimonial blockquote:before {
+  top: 0;
+  left: 10px;
+}
+
+.testimonial blockquote:after {
+  content: "\201D";
+  right: 10px;
+  bottom: -0.5em;
+}
+
+.testimonial div {
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #efefef;
+  margin: 0 0 0 60px;
+}
+
+.testimonial p {
+  margin: 8px 0 0 20px;
+  text-align: left;
+  color: rgb(66, 61, 121);
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 20px;
+}
+footer p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(66, 61, 121);
+  font-size: larger;
+}
